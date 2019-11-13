@@ -1,0 +1,26 @@
+.title {
+    color: darkgreen;
+}
+.title .subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.a {
+    text-align: center;
+}
+p {
+    line-height: 25px;
+}
+a {
+    text-decoration: none;
+}
+.b {
+    text-transform: uppercase;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    float: left;
+    margin-right: 25px;
+    border: solid 4pt darkgreen;
+}
