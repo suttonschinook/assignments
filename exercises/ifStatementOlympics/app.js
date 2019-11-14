@@ -15,16 +15,16 @@ var person = {
     age: 12
 }
 if (person.name[0] ==="B"){
-    console.log(person.name + "is allowed to go to the movie")
+    console.log(person.name + " is allowed to go to the movie")
 
 var person = {
     name: "Bobby",
     age: 12
 }
 if (person.name[0]=== "B" && person.age >=18){
-    console.log(person.name + "is allowed to go to the movie")
+    console.log(person.name + " is allowed to go to the movie")
 }else{
-    console.log(person.name + "is not allowed to go to the movie")
+    console.log(person.name + " is not allowed to go to the movie")
 }
 if (1 === "1"){
     console.log("Strict")
