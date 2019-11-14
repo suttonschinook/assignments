@@ -32,9 +32,14 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
   ]
 
 for (i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
-  if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
-      console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough")
-  }else{
-      console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough")
-  }
+  if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender ==="male"){
+      console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough. He's good to see Mad Max Fury Road.")
+        }else if(peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender ==="female"){
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough. She's good to see Mad Max Fury Road.")
+        }else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender ==="male"){
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough. He's not good to see Mad Max Fury Road.")
+        }else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female"){
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough. She's not good to see Mad Max Fury Road")
+            }
 }
+
