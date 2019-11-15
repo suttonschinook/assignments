@@ -43,3 +43,20 @@ for (i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
             }
 }
 
+var lightFlip = [2, 5, 435, 4, 3]
+var count = 0
+var lightOn = false
+
+for(var i = 0; i < lightFlip.length; i++){
+    count += lightFlip[i]
+    if (count % 2 === 1){
+        lightOn = true
+    }else{
+        lightOn = false
+    }
+}
+if (lightOn === true){
+    console.log("the light is on")
+}else{
+    console.log("the light is off")
+}
