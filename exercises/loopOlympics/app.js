@@ -72,9 +72,14 @@
 //   console.log (names)
 //   console.log (occupations)
 
-var nest = [[0,0,0],[0,0,0],[0,0,0]]
+var nest = [ [0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2] ]
+var result = []
 
-for (i = 0; i < nest.length; i++)
-//for (j = 0; j < nest[i].length; j++)
-
-console.log(nest[i])
+for ( var i = 0; i < nest.length; i++){
+    var newArray = []
+    for (var j = 0; j < nest[i].length; j++){
+        newArray.push(nest[j][i])
+    }
+    result.push(newArray)
+}
+console.log(result)

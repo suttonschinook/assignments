@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    font-size: 0;
+}
+
+.france{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    display: inline-block;
+    border: 5px solid black;
+}
+.box1{
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    background-color: blue;
+}
+.box2{
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    background-color: red;
+    margin-left: 33%;
+}
+.germany{
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.ger1{
+    background-color: red;
+    height: 33%;
+    width: 100%;
+    position: relative;
+    margin-top: 67px;
+    display: inline-block;
+}
+.ger2{
+    background-color: gold;
+    height: 34%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.mad{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.mad1{
+    background-color: red;
+    height: 50%;
+    width: 67%;
+    position: relative;
+    display: inline-block;
+    margin-left: 33%;
+}
+.mad2{
+    background-color: green;
+    height: 50%;
+    width: 67%;
+    position: relative;
+    display: inline-block;
+    margin-left: 33%;
+}
+.swiss{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.swiss1{
+    height: 50%;
+    width: 20% ;
+    background-color: white;
+    margin-left: 40%;
+    margin-top: 25%;
+}
+.swiss2{
+    height: 20%;
+    width: 50%;
+    background-color: white;
+    margin-left: 25%;
+    margin-top: -35%;
+}
+.sweden{
+    background-color: #004b87 ;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.sweden1{
+    height: 20%;
+    width: 100% ;
+    background-color: #ffcd00;
+    margin-top: 25%;
+}
+.sweden2{
+    height: 100%;
+    width: 15%;
+    background-color: #ffcd00;
+    margin-left: 30%;
+    margin-top: -38.5%;
+}
+.gam{
+    background-color: white ;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.gam1{
+    height: 30%;
+    width: 100%;
+    background-color: red;
+}
+.gam2{
+    height: 25%;
+    width: 100%;
+    background-color: blue;
+    margin-top: 5%;
+}
+.gam3{
+    height: 30%;
+    width: 100%;
+    background-color: green;
+    margin-top: 5%;
+}
+.tonga{
+    background-color: red;
+    height: 200px;
+    width: 375px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.tonga1{
+    background-color: white;
+    height: 50%;
+    width: 40%;    
+}
+.tonga2{
+    height: 10%;
+    width: 17%;
+    background-color: red;
+    margin-left: 12%;
+    margin-top: -16%
+
+}
+.tonga3{
+    height: 30%;
+    width: 5%;
+    background-color: red;
+    margin-left: 18%;
+    margin-top: -11%;
+
+}
+.japan{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.japan1{
+    height: 50%;
+    width: 35%;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 33%;
+    margin-top: 16%;
+}
+.greece{
+    background-color: #0d5eaf;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.greece1{
+    background-color: white;
+    height: 22px;
+    width: 67%;
+    margin-top: 22px;
+    margin-left: 33%;
+
+}
+.greece2{
+    background-color: white;
+    height: 23px;
+    width: 33%;
+}
+.greece3{
+    background-color: white;
+    height: 110px;
+    width: 7%;
+    margin-top: -68px;
+    margin-left: 12%;
+}
+.greece4{
+    background-color: white;
+    height: 22px;
+    width: 67%;
+    margin-top: -42px;
+    margin-left: 33%;
+}
+.greece5{
+    background-color: white;
+    height: 23px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left:
+
+}
+.greece6{
+    background-color: white;
+    height: 23px;
+    width: 100%;
+    margin-top: 22px
+}
+.niger{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.niger1{
+    height: 33%;
+    width: 100%;
+    background-color: #e05206;
+    display: inline-block;
+}
+.niger2{
+    height: 27%;
+    width: 18%;
+    background-color: #e05206;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 7px;
+
+}
+.niger3{
+    height: 33%;
+    width: 100%;
+    background-color: #0db02b;
+    display: inline-block;
+    margin-top: 7px;
+}
+.mal{
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 2px;
+}
+.mal1{
+    background-color: green;
+    height: 50%;
+    width: 70%;
+    margin-top: 16%;
+    margin-left: 15%;  
+}
+.mal2{
+  left: 30px;
+  bottom: 30px;
+  height: 70px;
+  width: 90px;
+  border-radius: 56%;
+  border: 0 solid white;
+  border-width: 0 0 0 15px;
+  margin-top: -28%;
+  margin-left: 40%;
+
+}

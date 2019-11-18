@@ -52,3 +52,32 @@ function fib (n){
 }
 
 console.log (fib(10))
+
+function getMax (str){
+    var max = 0
+    var maxChar = '';
+    var array = str.split('')
+    console.log(array)
+    for (i = 0; i < array.length; i++){
+        var char = array[i]
+        if (str.split(char).length > max){
+            max = str.split(char).length;
+            maxChar = char;
+        }
+    }
+    console.log(maxChar);
+}
+getMax("supercalifragilisticexpialidocious")
+
+function letterCount(str) {
+    let count = 0;
+    let results = []
+    let newArr = str.split('')
+    let sorted = newArr.sort()
+    for (let i = 0; i < newArr.length - 1; i++) {
+      if(sorted[i + 1] === sorted[i])
+      results.push(sorted[i])
+    }
+    console.log(results)
+  }
+  letterCount('a;sdkffd')
