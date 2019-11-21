@@ -1,5 +1,105 @@
 @font-face{
-    font-family: "mario";
-    src: 
-    src: local("SuperMario256")
+    font-family: mario;
+    src: url(marioImg/SuperMario256.ttf)
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wp77117.png);
+}
+.title{
+    margin: 0;
+    font-family: mario, cursive;
+    font-size: 30pt;
+
+}
+.instructions{
+    margin-top: 25pt;
+    text-align: center;
+    font-family: mario;
+    font-size: 10pt;
+}
+.pestPic{
+    width: 75pt;
+    float: left;;
+    margin: 10pt;
+}
+.container1{   
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+    font-family: mario;
+    font-size: 10pt;
+}
+.goombaPic{
+    width: 50pt;
+    height: 60pt;
+}
+.bobombPic{
+    width: 50pt;
+    height: 60pt;
+}
+.cheepCheepPic{
+    width: 50pt;
+    height: 60pt;
+}
+.coin{
+    display: inline-block;
+    height: 40pt;
+    margin-left: 10pt;
+    margin-bottom: 10pt;
+}
+.coin2{
+    display: inline-block;
+    height: 40pt;
+    margin-bottom: 10pt;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 50pt;
+    font-family: mario;
+
+}
+.form > input{
+    margin-top
+}
+.equals{
+    height: 30pt;
+    margin-bottom: 15pt;
+    margin-left: 5pt;
+}
+.five{
+    height:40pt;
+    margin-bottom: 10pt;
+}
+.seven{
+    height: 40pt;
+    margin-bottom: 10pt;
+}
+.eleven{
+    height: 40pt;
+    margin-bottom: 10pt;
+    margin-left: -10pt;
+}
+.eleven2{
+    height:40pt;
+    margin-bottom: 10pt;
+    margin-left: -23pt
+}
+.footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: mario;
+    margin: 15pt;
+}
+.allContainer{
+    display: flex;
 }
