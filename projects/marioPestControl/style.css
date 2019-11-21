@@ -8,11 +8,11 @@ body{
 .title{
     margin: 0;
     font-family: mario, cursive;
-    font-size: 30pt;
+    font-size: 40pt;
 
 }
 .instructions{
-    margin-top: 25pt;
+    margin-top: 50pt;
     text-align: center;
     font-family: mario;
     font-size: 10pt;
@@ -102,4 +102,22 @@ body{
 }
 .allContainer{
     display: flex;
+}
+.marioMoney{
+    width: 30%;
+    display: flex;
+    
+}
+.owesYou{
+    font-family: mario;
+    display: inline-block;
+    flex-direction: column;;
+    
+}
+.results{
+    font-family: mario;
+    font-size: 30pt;
+    
+    
+    
 }
