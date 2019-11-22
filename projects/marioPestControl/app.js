@@ -14,5 +14,5 @@ submitBtn.addEventListener("click", function(e){
     var addResult = document.createElement("div")
     moneyOwed.appendChild(addResult)
     addResult.classList.add("results")
-    addResult.textContent = " The lazy-ass Princess owes you " + (sum(Number(num1), Number(num2), Number(num3)) + " coins of blood money for your murderous work")
+    addResult.textContent = " The Princess owes you " + (sum(Number(num1), Number(num2), Number(num3)) + " coins of blood money for your murderous work")
 })
