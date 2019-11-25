@@ -44,3 +44,14 @@ select.addEventListener ("onchange", function (e){
         messageRight.className = ("theme2")
     }
 })
+var sendBtn = document.getElementById("send")
+
+sendBtn.addEventListener("click", function(e){
+    e.preventDefault()
+    var input = document.getElementById("input").value
+    var messages = document.getElementById("messages")
+    var newMessage = document.createElement ("div")
+    messages.appendChild(newMessage)
+    newMessage.className = "left"
+    newMessage.textContent = input
+})
