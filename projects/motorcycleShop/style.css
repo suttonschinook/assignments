@@ -18,6 +18,12 @@
         display: flex;
         justify-content: space-between;
     }
+    .logo{
+        float: left;
+        width: 80px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
     .apex{
         margin-top: 15px;
         margin-left: auto;
@@ -28,11 +34,9 @@
     }
     .header{
         font-family: "title-font";
-        font-size: 35px;
-        margin-left: 10px;
+        font-size: 50px;
         letter-spacing: 2px;
-        margin-top: 10px;
-        overflow-wrap: normal;
+        margin-top: 20px;
   }
   .bullet{
       margin: 20px;
