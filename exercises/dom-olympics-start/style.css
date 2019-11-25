@@ -5,10 +5,10 @@
 }
 
 .name {
-    color: peachpuff;
+    color: aqua;
 }
 
-.messages {
+#messages {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -28,10 +28,17 @@
 
 .right {
     align-self: flex-end;
-    background-color: lightblue;
+    background-color: aqua;
 }
 
 .left {
     align-self: flex-start;
-    background-color: burlywood;
+    background-color: saddlebrown;
+}
+.themeTwo{
+    background-color: red;
+}
+.theme2{
+    background-color: black;
+    color: hotpink;
 }

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+.logo{
+    float: left;
+    width: 100px;
+}
+.companyHeader{
+    font-size: 80px;
+}
