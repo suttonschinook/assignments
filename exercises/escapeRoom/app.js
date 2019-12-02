@@ -37,4 +37,5 @@ while (hasKey){
         console.log("Trying to find something you already have? You must be high, you idiot.")
     }else (userChoice == "2")
             console.log("Look buddy, you accually followed through with something, wow. Get the hell out of here, hope you don't make it back here because of all your addictions.")
+            break
 }
