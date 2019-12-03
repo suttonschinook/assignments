@@ -14,15 +14,19 @@ var div = doMath(num1,num2)
 function doMath(num1, num2){
     if (operationChoice == "0"){
         sum = Number(num1) + Number(num2)
-        return sum
-    }else if (operationChoice == 2){
+        console.log( sum)
+        return
+    }else if (operationChoice == "1"){
         sub = Number(num1) - Number(num2)
-        return sub
-    }else if (operationChoice === 3){
-        mul = num1 * num2
-        return mul
-    }else{
-        div = num1 / num2
-        return div   
+        console.log( sub)
+        return
+    }else if (operationChoice == "2"){
+        mul = Number(num1) * Number(num2)
+        console.log( mul)
+        return
+    }else if (operationChoice == "3"){
+        div = Number(num1) / Number(num2)
+        console.log( div)
+        return
     }
 } 
