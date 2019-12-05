@@ -70,8 +70,7 @@ function fight(){
             console.log("It seems you were not strong enough, Game Over")
             process.exit()
         }
-    }
-    else{
+    } else {
         var damageDone = Math.floor(Math.random()*10)
         console.log("The enemy takes " + damageDone + " damage")
         enemy.health = enemy.health - damageDone
