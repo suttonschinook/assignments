@@ -1,0 +1,16 @@
+#counter{
+    background-color: aquamarine;
+    font-size: 85px;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+
+}
+#button{
+    margin-left: 30px;
+    border: solid 2px black;
+}
+
+#reset{
+    border: solid 2px black;
+}
