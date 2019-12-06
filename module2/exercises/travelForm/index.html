@@ -11,19 +11,19 @@
     <img class="logo" src="https://i.pinimg.com/originals/70/7b/86/707b868f5b2b8ab6ec7f0d0b92b2df5a.png"/>
     <span class="companyHeader">Scandanavia Air</span>
     <form name="form">
-        <input type="text" id="firstName" placeholder="First Name">
-        <input type="text" id="lastName" placeholder="Last Name">
-        <input type="number" id="age" placeholder="Age">
-        <select id="destination">
+        <input type="text" name="firstName" placeholder="First Name">
+        <input type="text" name="lastName" placeholder="Last Name">
+        <input type="number" name="age" placeholder="Age">
+        <select name="destination">
             <option value="helsinki">Helsinki</option>
             <option value="heykjavík">Reykjavík</option>
             <option value="stockholm">Stockholm</option>
             <option value="oslo">Oslo</option>
         </select>
-        <input type="checkbox" name="restriction1" id="dairy">No dairy<br>
-        <input type="checkbox" name="restriction2" id="vegan">Vegan<br>
-        <input type="checkbox" name="restriction3" id="carnivor">Meat Only<br>
-        <button id="submitBtn">Submit</button>
+            <input type="checkbox" name="restriction" value="noDairy">No dairy<br>
+            <input type="checkbox" name="restriction" value="vegan">Vegan<br>
+            <input type="checkbox" name="restriction" value="carnivore">Meat Only<br>
+        <button name="submitBtn">Submit</button>
     </form>
     <script src="app.js"></script>
 </body>
