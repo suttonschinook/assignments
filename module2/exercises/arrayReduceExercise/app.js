@@ -35,6 +35,16 @@
 // const flatten = arr => arr.reduce((final, stuff) => [...final, ...stuff])
 // console.log(flatten([["1", "2", "3"], [true], [4, 5, 6]])); 
 
+const voterResults = arr => arr.reduce((final, person) => person.age <= 25 && !person.voted ? {...final, youth: final.youth += 1} : person.age <= 25 && person.voted ? {...final, youth: final.youth += 1, youngVotes: final.youngVotes += 1} : person.age >=26 && person.age <= 35 && !person.voted ? {...final, mids: final.mids +=1} : person.age >=26 && person.age <= 35 && person.voted ? {...final, mids: final.mids +=1, midVotes: final.midVotes += 1} : person.age >=36 && person.age <= 55 && !person.voted ? {...final, olds: final.olds +=1} : person.age >=36 && person.age <= 55 && person.voted ? {...final, olds: final.olds +=1, oldVotes: final.oldVotes += 1} :final, {
+    youngVotes: 0,
+    youth: 0,
+    midVotes: 0,
+    mids: 0,
+    oldVotes: 0,
+    olds: 0,
+
+})
+
 const voters = [
     {name:'Bob' , age: 30, voted: true},
     {name:'Jake' , age: 32, voted: true},
@@ -50,14 +60,4 @@ const voters = [
     {name: 'Zack', age: 19, voted: false}
 ];
 
-const voterResults = arr => arr.reduce((final, person) => person.age <= 25 && person.voted ? final += "young vote:" + 1 : final)
-console.log(voterResults([voters])); // Returned value shown below:
-/*
-{ youngVotes: 1,
-  youth: 4,
-  midVotes: 3,
-  mids: 4,
-  oldVotes: 3,
-  olds: 4 
-}
-*/
+console.log(voterResults(voters))
