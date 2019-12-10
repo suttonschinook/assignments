@@ -16,8 +16,9 @@ function sum(x, y){
   
   
 const user = {username: "sam", password: "123abc"};
-const login = (username, password) =>{ 
-    username === user.username && password === user.password ? console.log("Credentials are good") : console.log("Login information incorrect")}
+const login = (username, password) => { 
+    username === user.username && password === user.password ? "Credentials are good" : "Login information incorrect"
+    }
 
 try{
     login("sam", "123abc")
