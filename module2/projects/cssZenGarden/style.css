@@ -10,27 +10,46 @@
     margin: 0;
 }
 .logo{
-    height: 50px;
-    width: 50px;
+    height: 155px;
+    width: 155px;
+    opacity: .6;
+    margin-left: 42%;
+    margin-top: 7%;
+    
 }
 .background{
     background-image: url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 50% auto auto cover;
-    border-top: solid 10px rgba(19, 67, 71, 0.9);
+    background-size: cover;
+    height: 735px;
+    background-repeat: no-repeat;
+    border-top: solid 20px rgba(19, 67, 71, 0.9);
 }
 h1{
     font-family: "julis", sans-serif;
+    color: #ffffff;
+    font-size: 70;
+    margin-left: 18%;
+    margin-top: 4% ;
+}
+h2{
+    font-family: "libre",sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    font-size: 43;
+    margin-left: 20%;
+    margin-top: 20;
 }
 h3{
     font-family: "julis", sans-serif;
     color: #325050;
     font-size: 50;
-    margin: 10% 10% -5% 10%
+    margin: 10% 10% -7% 10%
 }
 p{
     color: #325050;
     margin:10%;
     line-height: 1.75;
+    letter-spacing: 2;
 }
 .container {
     /* display: grid;
