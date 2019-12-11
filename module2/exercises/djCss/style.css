@@ -20,6 +20,9 @@
 #finger{
     height: 250px;
     opacity: 0;
+    position: relative;
+    left: 25px;
+    top: 25px;
 }
 #finger:hover{
     opacity: 1;
@@ -39,6 +42,9 @@
     z-index: -1;
 }
 p{
+    position: relative;
+    left: 30px;
+    top: 25px;
     color: lavender;
     z-index: inherit;
     font-size: 40pt;
@@ -55,7 +61,6 @@ p{
     right: 305px;
     bottom: 312px;
     z-index: -1;
-
 }
 #box5{
     grid-column: 2/3;
@@ -98,4 +103,8 @@ p{
 #box5:hover{
     transform:skew(-35deg);
     transition: transform 2s;
+}
+#box6:hover{
+    box-shadow: 10px 15px #333;
+    transition: box-shadow 2s;
 }
