@@ -6,8 +6,17 @@
     font-family: "libre";
     src: url(./images/LibreBaskerville-Regular.ttf);
 }
+@font-face{
+    font-family: "verde";
+    src: url(./images/verdemoderna.woff);
+}
 *{
     margin: 0;
+}
+.header{
+    background-color:rgba(19, 67, 71,  1) ;
+    height: 33px;
+
 }
 .logo{
     height: 155px;
@@ -22,7 +31,6 @@
     background-size: cover;
     height: 735px;
     background-repeat: no-repeat;
-    border-top: solid 20px rgba(19, 67, 71, 0.9);
 }
 h1{
     font-family: "julis", sans-serif;
@@ -50,6 +58,24 @@ p{
     margin:10%;
     line-height: 1.75;
     letter-spacing: 2;
+}
+.nav{
+    background: rgba(255, 255, 255, .6);
+    height: 70%;
+    width: 100%;
+    padding-top: 200px;
+    z-index: 2;
+}
+.next{
+    font-family: "verde";
+    font-size: 150;
+    color: rgba(255, 255, 255, .6);
+}
+.viewAll{
+    font-family: "julis";
+    font-size: 50;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
 }
 .container {
     /* display: grid;
