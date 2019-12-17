@@ -1,7 +1,65 @@
 {
     "appetizers": [
         {
-            "name":
+            "name": "Calimari",
+            "ingredients": ["Squid","Flour", "Spices"],
+            "description": "Fried Squid with secret sprices"
+        },
+        {
+            "name": "Roll",
+            "ingredients": ["Flour", "Egg", "Milk", "Sugar"],
+            "description": "It's a roll, stupid"
+        }
+    ],
+
+    "cold sandwiches": [
+        {
+            "name": "Shit Sandwich",
+            "ingredients": ["Cibatta Bread", "Fresh Turd", "Condiments"],
+            "description": "Sometimes you have to take a big bite, even if you don't want to"
+        },
+        {
+            "name": "Turkey Sandwich",
+            "ingredients": ["Some sort of bread", "Turkey", "Lettuce", "Tomato", "Mayo"],
+            "description": "Again, do you not understand what a Turkey sandwich is? Are you dense?"
+        }
+    ], 
+  "hot sandwiches": [
+        {
+            "name": "Turd Furgeson",
+            "ingredients": ["???", "?????","It's a secret"],
+            "description": "Turd Furgeson, it's a funny name"
+        },
+        {
+            "name": "Meatball Sub",
+            "ingredients": ["Bread of choice", "Meatballs", "Marinara", "Italian Seasoning", "Tears"],
+            "description": "There may or may not be tears in your sub, depends on if we took our meds today"
+        }
+    ],
+
+    "desserts": [
+        {
+            "name": "Mr. Lemonface",
+            "ingredients": ["Citrus, tons of citrus", "Probably some sugar too", "Other shit to make cookies"],
+            "decription": "Do you like cookies but also hate yourself? If so, try and keep a straight face whilst eating this cookie"
+        },
+        {
+            "name": "Fred",
+            "ingredients": ["Sugar", "Spice","Most things nice"],
+            "description": "We got sick and tired of people point at him but never knowing what to call him. So his name is now Fred. If you want a Fred then ask for him by name, stop pointing and being rude."
+        }
+    ],
+
+    "drinks": [
+        {
+            "name": "Coke",
+            "ingredients": ["Trade Secret Shit", "Water", "A shit ton of corn syrup"],
+            "description": "It's a coke"
+        },
+        {
+            "name": "Whiskey",
+            "ingredients": ["Whiskey","Maybe some ice", "A mixer as well?"],
+            "description": "Having a bad day at class? This will take the edge off"
         }
     ]
 }
