@@ -14,8 +14,8 @@
 
     "cold sandwiches": [
         {
-            "name": "Shit Sandwich",
-            "ingredients": ["Cibatta Bread", "Fresh Turd", "Condiments"],
+            "name": "Ham Sandwich",
+            "ingredients": ["Cibatta Bread", "Ham", "Condiments"],
             "description": "Sometimes you have to take a big bite, even if you don't want to"
         },
         {
