@@ -4,21 +4,23 @@ const listTodos = () => {
         for(i =0; i < response.data.length; i++){
             const unorderdList = document.createElement("span")
             unorderdList.setAttribute("id", response.data[i]._id)
-
             const checkbox = document.createElement('input')
             checkbox.setAttribute("type" ,"checkbox")
-
             const listItem = document.createElement("h1")
             listItem.textContent = response.data[i].title
-
+            
             const itemImage = document.createElement("img")
             itemImage.setAttribute("id", "images")
             itemImage.src = response.data[i].imgUrl
             itemImage.style.width="200px"
-
-            const completeBtn = document.createElement("BUTTON")
-            completeBtn.setAttribute("id", "complete")
-            completeBtn.textContent = "Complete"
+            
+            checkbox.addEventListener("click", function(e){
+                e.preventDefault()
+                if (checkbox.checked){
+                    listItem.style.textDecoration = "line-through";
+                    axios.put(`https://api.vschool.io/evansutton/todo/${response.data[i-1]._id}`, {completed: true})
+                }
+            })
 
             const deleteBtn = document.createElement("BUTTON")
             deleteBtn.setAttribute("id", "delete")
@@ -36,13 +38,6 @@ const listTodos = () => {
     
     .catch (error => console.log(error))
 }
-
-// completeBtn.addEventListener("click", function(e){
-//     e.preventDefault()
-//     if (display.hasChildNodes.checkbox.checked = true){
-        
-//     }
-// })
 
 const form = document.form
 
