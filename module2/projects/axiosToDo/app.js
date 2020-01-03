@@ -2,6 +2,9 @@ const listTodos = () => {
     axios.get("https://api.vschool.io/evansutton/todo")
     .then (response => {
         for(i =0; i < response.data.length; i++){
+            const display = document.createElement("div")
+            display.setAttribute("id", "display")
+            document.getElementById("body").appendChild(display)
             const unorderdList = document.createElement("span")
             unorderdList.setAttribute("id", response.data[i]._id)
             const checkbox = document.createElement('input')
@@ -25,6 +28,13 @@ const listTodos = () => {
             const deleteBtn = document.createElement("BUTTON")
             deleteBtn.setAttribute("id", "delete")
             deleteBtn.textContent = "DELETE"
+
+            deleteBtn.addEventListener("click", function(e){
+                e.preventDefault()
+                axios.delete(`https://api.vschool.io/evansutton/todo/${response.data[i-1]._id}`)
+                    .then(response => console.log(reponse))
+                    .catch(error => console.log(error))
+            })
 
             document.getElementById("display").appendChild(listItem)
             document.getElementById("display").appendChild(itemImage)
