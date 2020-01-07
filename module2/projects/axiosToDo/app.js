@@ -5,13 +5,12 @@ const listTodos = () => {
             const display = document.createElement("div")
             display.setAttribute("id", "display")
             document.getElementById("body").appendChild(display)
-            const unorderdList = document.createElement("span")
-            unorderdList.setAttribute("id", response.data[i]._id)
-            const checkbox = document.createElement('input')
-            checkbox.setAttribute("type" ,"checkbox")
+            // const unorderdList = document.createElement("span")
+            // unorderdList.setAttribute("id", response.data[i]._id)
             const listItem = document.createElement("h1")
             listItem.textContent = response.data[i].title
-            
+            const checkbox = document.createElement('input')
+            checkbox.setAttribute("type" ,"checkbox")
             const itemImage = document.createElement("img")
             itemImage.setAttribute("id", "images")
             itemImage.src = response.data[i].imgUrl
