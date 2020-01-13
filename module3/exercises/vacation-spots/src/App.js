@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import VacationSpot from "./VacationSpot"
+import vacationData from "./vacationData"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    console.dir(vacationData)
+    const vacationPlaces = vacationData.map(place => <VacationSpot key={place.id} pickles={place.place}/>)
+    return(
+        <div>
+            {vacationPlaces}
+        </div>
+    )
 }
 
-export default App;
+export default App

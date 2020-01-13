@@ -1,9 +1,10 @@
 import React from "react"
 
 function VacationSpot(props){
+    console.dir(props)
     return(
         <div>
-            <h2>{props.vactionSpots.place}</h2>
+            <h2>{props.pickles}</h2>
         </div>
     )
 }
