@@ -1,0 +1,22 @@
+.container {
+    width: 400px;
+    background-color: lightsteelblue;
+}
+.friend{
+    color: steelblue;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.age{
+    text-align: center;
+    font-size: 40px;
+}
+.petName{
+    text-align: center;
+    text-transform: capitalize;
+}
+.breed{
+    text-align: center;
+    text-transform: uppercase;
+}
