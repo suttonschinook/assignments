@@ -33,7 +33,7 @@ class App extends React.Component{
             changeBottomLeftColors(){ 
               if(this.state.colors[2] === "white"){
                 this.setState({ 
-                    colors: [this.state.colors[0], this.state.colors[1], "rebecca purple", this.state.colors[3]]
+                    colors: [this.state.colors[0], this.state.colors[1], "purple", this.state.colors[3]]
                 })
                 } else { 
                   this.setState({ 
