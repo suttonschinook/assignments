@@ -55,13 +55,13 @@ class NameBadge extends React.Component{
         return(
             <div style={badgeStyle}>
                 <form style={formStyle}>
-                    <input style = {inputStyle} placeholder="First Name"></input>
-                    <input style = {inputStyle} placeholder="Last Name"></input>
-                    <input style = {inputStyle} placeholder="Email"></input>
-                    <input style = {inputStyle} placeholder="Place of Birth"></input>
-                    <input style = {inputStyle} placeholder="Phone"></input>
-                    <input style = {inputStyle} placeholder="Favorite Food"></input>
-                    <textarea style = {aboutStyle} placeholder="Tell us about yourself " ></textarea>
+                    <input style = {inputStyle} placeholder="First Name" minLength = "3" ></input>
+                    <input style = {inputStyle} placeholder="Last Name" minLength = "3"></input>
+                    <input style = {inputStyle} placeholder="Email" minLength = "3"></input>
+                    <input style = {inputStyle} placeholder="Place of Birth" minLength = "3"></input>
+                    <input type = "number" style = {inputStyle} placeholder="Phone" minLength = "9"></input>
+                    <input style = {inputStyle} placeholder="Favorite Food" minLength = "3"></input>
+                    <textarea style = {aboutStyle} placeholder="Tell us about yourself "></textarea>
                     <br/>
                     <button style = {buttonStyle} >Submit</button>
                 </form>
