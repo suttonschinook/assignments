@@ -5,13 +5,13 @@ function BadgeCard(props){
     console.log(props)
     return(
         <div style = {props.badgeStyle.badgeStyle}>
-            <div>{props.firstName}</div>
-            <div>{props.lastName}</div>
-            <div>{props.favfood}</div>
-            <div>{props.phoneNumber}</div>
-            <div>{props.placeOfBirth}</div>
-            <div>{props.emailAddress}</div>
-            <div>{props.aboutMe}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.firstName}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.lastName}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.favfood}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.phoneNumber}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.placeOfBirth}</div>
+            <div style = {props.badgeStyle.inputStyle}>{props.emailAddress}</div>
+            <div style = {props.badgeStyle.aboutStyle}>{props.aboutMe}</div>
         </div>
     )
 }
