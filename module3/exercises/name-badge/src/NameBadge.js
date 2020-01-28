@@ -89,7 +89,7 @@ class NameBadge extends React.Component{
 
         const mappedBadges = this.state.badges.map((badge, index) => {
             return(
-                <BadgeCard  key = {index} {...badge} badgeStyle={buttonStyle, formStyle, aboutStyle, inputStyle, badgeStyle}/>
+                <BadgeCard  key = {index} {...badge} badgeStyle = {badgeStyle} buttonStyle = {buttonStyle} formStyle = {formStyle} aboutStyle = {aboutStyle} inputStyle = {inputStyle} />
             )
         })
         return(
