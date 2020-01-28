@@ -1,4 +1,5 @@
 import React from "react"
+import "./styles.css"
 
 function BadgeCard(props){
     console.log(props)
