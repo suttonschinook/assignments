@@ -1,5 +1,4 @@
 import React from "react"
-import "./styles.css"
 const axios = require ("axios")
 
 class App extends React.Component {
