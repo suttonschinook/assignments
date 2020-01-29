@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./styles.css"
+import Header from "./Header"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            people: []
+        }
+    }
+
+    componentDidMount(){
+        fetch("https://raw.githubusercontent.com/VSchool/vschool-api/master/static/hitlist.json")
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    people: data
+                })
+                console.log(data)
+            })
+    }
+
+    render(){
+        const background ={
+            backgroundColor: "black",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
+        }
+        const pictureStyle ={
+            display: "flex",
+            width: "400px",
+            marginLeft: "auto",
+            marginRight: "auto"
+        }
+
+        const nameStyle ={
+            display: "flex",
+            justifyContent: "center",
+            color: "red"
+        }
+        return(
+            <div style ={background}>
+                <Header />
+                {this.state.people.map(person => (
+                    <div>
+                        <img style = {pictureStyle} src= {person.image} />
+                        <h1 style = {nameStyle} >{person.name}</h1>
+                    </div>
+                ))}
+            </div>
+        )
+    }
 }
-
-export default App;
+export default App
