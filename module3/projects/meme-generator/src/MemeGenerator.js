@@ -8,7 +8,8 @@ class MemeGenerator extends React.Component{
             topText: "",
             bottomText: "",
             randomImage: "http://i.imgflip.com/1bij.jpg",
-            allMemeImages: []
+            allMemeImages: [],
+            starWars:[]
         }
         this.handleChange = this.handleChange.bind(this)
         this.generateNewMeme = this.generateNewMeme.bind(this)
@@ -36,7 +37,7 @@ class MemeGenerator extends React.Component{
                     allMemeImages: memes
                 })
             })
-    }
+        }
     
     render(){
         return(
