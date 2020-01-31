@@ -112,3 +112,6 @@ header > p {
   font-size: 25px;
   text-align: cen
 }
+.memeImage {
+    max-height: 400px;
+}
