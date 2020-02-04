@@ -5,10 +5,10 @@ import "./styles.css"
 
 function App(){
     return(
-        <div>
+        <React.Fragment>
             <Header />
             <MemeGenerator />
-        </div>
+        </React.Fragment>
     )
 }
 

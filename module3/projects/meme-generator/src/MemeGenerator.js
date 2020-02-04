@@ -38,7 +38,7 @@ class MemeGenerator extends React.Component{
     render(){
         const {topText, bottomText, randomImage} = this.state
         return(
-            <div>
+            <React.Fragment>
                 <form className="meme-form">
                     <input
                         type = "text"
@@ -58,12 +58,12 @@ class MemeGenerator extends React.Component{
                     />
                     <button onClick ={this.generateNewMeme}>Gen</button>
                 </form>
-                <div className="meme">
+                <React.Fragment className="meme">
                     <img className = "memeImage" src={randomImage} />
                     <h2 className ="top">{topText}</h2>
                     <h2 className ="bottom">{bottomText}</h2>
-                </div>
-            </div>
+                </React.Fragment>
+            </React.Fragment>
         )
     }
 }
