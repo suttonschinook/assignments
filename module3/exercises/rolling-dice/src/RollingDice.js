@@ -16,9 +16,9 @@ class RollingDice extends React.Component{
             fontSize: "100px"
         }
         return(
-            <div>
+            <React.Fragment>
                 <div style={dice}>{this.props.num}</div>
-            </div>
+            </React.Fragment>
         )
     }
 
