@@ -4,15 +4,15 @@ import "./styles.css"
 function BadgeCard(props){
     console.log(props)
     return(
-        <div style = {props.badgeStyle}>
-            <div style = {props.inputStyle}>{props.firstName}</div>
-            <div style = {props.inputStyle}>{props.lastName}</div>
-            <div style = {props.inputStyle}>{props.favfood}</div>
-            <div style = {props.inputStyle}>{props.phoneNumber}</div>
-            <div style = {props.inputStyle}>{props.placeOfBirth}</div>
-            <div style = {props.inputStyle}>{props.emailAddress}</div>
-            <div style = {props.aboutStyle}>{props.aboutMe}</div>
-        </div>
+        <React.Fragment style = {props.badgeStyle}>
+            <React.Fragment style = {props.inputStyle}>{props.firstName}</React.Fragment>
+            <React.Fragment style = {props.inputStyle}>{props.lastName}</React.Fragment>
+            <React.Fragment style = {props.inputStyle}>{props.favfood}</React.Fragment>
+            <React.Fragment style = {props.inputStyle}>{props.phoneNumber}</React.Fragment>
+            <React.Fragment style = {props.inputStyle}>{props.placeOfBirth}</React.Fragment>
+            <React.Fragment style = {props.inputStyle}>{props.emailAddress}</React.Fragment>
+            <React.Fragment style = {props.aboutStyle}>{props.aboutMe}</React.Fragment>
+        </React.Fragment>
     )
 }
 
