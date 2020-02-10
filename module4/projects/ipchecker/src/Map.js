@@ -3,22 +3,29 @@ import React from "react"
 
 class Map extends React.Component{
     state = {
-        center: "",
-        defaultZoom: 8
+        center: {lat: 40.765925, lng: -111.888657}, 
+        zoom: 14
     }
     render(){
+        const mapStyle = {
+            width: "700px",
+            height: "500px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "20px",
+            border: "5px solid black"
+        }
         return(
-            <div>
+            <div style = {mapStyle}>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: "", 
+                        key: "AIzaSyDPXugV3IUyKcXLJ71ozh6VcW2rBWY8jXk", 
                         language: 'en'
                     }}
                     defaultCenter={this.props.center}
-                    center={this.state.center}
                     defaultZoom={this.props.zoom}
-                    onChildMouseEnter={this.onChildMouseEnter}
-                    onChildMouseLeave={this.onChildMouseLeave}
+                    // onChildMouseEnter={this.onChildMouseEnter}
+                    // onChildMouseLeave={this.onChildMouseLeave}
                 />
             </div>
         )
@@ -26,7 +33,7 @@ class Map extends React.Component{
 
     static defaultProps = {
         center: {lat: 40.765925, lng: -111.888657}, 
-        zoom: 8
+        zoom: 14
      }
 }
 export default Map

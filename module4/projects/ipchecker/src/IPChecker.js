@@ -2,7 +2,6 @@
 // Need to build a function that allows input of IP address to check, receive response, display for the user
 
 import React from 'react'
-import Map from './Map'
 import './styles.css'
 
 class IPChecker extends React.Component{
@@ -10,9 +9,9 @@ class IPChecker extends React.Component{
         ipAddress: "",
         ipInfo: {},
     }
-    handleSubmit = () => {
-        fetch('https://api.iplegit.com/full?ip=${ipAddress}')
-        .then (response = response.json())
+    handleSubmit = (e) => {
+        e.preventDefault()
+        fetch('https://api.iplegit.com/full?ip='+this.state.ipAddress)
         .then (response => {
             const {info} = response.data
             this.setState({
@@ -25,22 +24,25 @@ class IPChecker extends React.Component{
         this.setState({
             [name]: value
         })
+        console.log(this.state.ipAddress)
     }
     render(){
         const formStyle = {
             display: 'flex',
             width: '100%',
             height: '25%',
-            marginRight: '25%',
-            marginLeft: '25%',        
+            alignItems: "center",
+            justifyContent: "center"     
         }
         const inputStyle = {
-            height: '50px',
+            height: '45px',
             width: '50%',
             fontSize: '125%'
         }
         const buttonStyle ={
-            width: '25%'
+            width: '25%',
+            height: "50px",
+            border: "2px solid black"
         }
         return(
             <div>
@@ -52,13 +54,13 @@ class IPChecker extends React.Component{
                         value = {this.ipAddress}
                         onChange = {this.handleChange}
                     />
-                    <button onSubmit = {this.handleSubmit}>Check IP Address</button>
+                    <br/>
+                    <button style = {buttonStyle} onSubmit = {this.handleSubmit}>Check IP Address</button>
                 </form>
-                <Map />
             </div>
         )
     }
 }
 export default IPChecker
 
-//AIzaSyDPXugV3IUyKcXLJ71ozh6VcW2rBWY8jXk
+//

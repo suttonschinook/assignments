@@ -1,6 +1,7 @@
 import React from "react"
-import IPChecker from "./IPChecker"
 import Header from "./Header"
+import IPChecker from "./IPChecker"
+import Map from "./Map"
 import Footer from "./Footer"
 
 function App(){
@@ -8,6 +9,7 @@ function App(){
         <div>
             <Header />
             <IPChecker />
+            <Map />
             <Footer />
         </div>
     )
