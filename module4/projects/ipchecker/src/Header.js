@@ -9,8 +9,8 @@ function Header (){
         justifyContent: "center",
         alignItems: "center",
         background: "#6441A5",  /* fallback for old browsers */
-        background: "-webkit-linear-gradient(to right #1eeba6, #a0ffdf)",  /* Chrome 10-25, Safari 5.1-6 */
-        background: "linear-gradient(to right, #1eeba6, #a0ffdf)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: "-webkit-linear-gradient(to right #1eeba6, #fff)",  /* Chrome 10-25, Safari 5.1-6 */
+        background: "linear-gradient(to right, #1eeba6, #fff)", /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         border: "2px solid black"
     }
     return(

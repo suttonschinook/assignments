@@ -12,11 +12,12 @@ class IPChecker extends React.Component{
     handleSubmit = (e) => {
         e.preventDefault()
         fetch('https://api.iplegit.com/full?ip='+this.state.ipAddress)
+        .then(response => response.json())
         .then (response => {
-            const {info} = response.data
             this.setState({
-                ipInfo: info
+                ipInfo: response
             })
+            console.log(this.state.ipInfo)
         })
     }
     handleChange = (e) => {
@@ -24,7 +25,6 @@ class IPChecker extends React.Component{
         this.setState({
             [name]: value
         })
-        console.log(this.state.ipAddress)
     }
     render(){
         const formStyle = {
@@ -55,7 +55,7 @@ class IPChecker extends React.Component{
                         onChange = {this.handleChange}
                     />
                     <br/>
-                    <button style = {buttonStyle} onSubmit = {this.handleSubmit}>Check IP Address</button>
+                    <button style = {buttonStyle} onClick = {this.handleSubmit}>Check IP Address</button>
                 </form>
             </div>
         )
