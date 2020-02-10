@@ -11,7 +11,7 @@ class Map extends React.Component{
             <div>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: "AIzaSyDPXugV3IUyKcXLJ71ozh6VcW2rBWY8jXk", 
+                        key: "", 
                         language: 'en'
                     }}
                     defaultCenter={this.props.center}
