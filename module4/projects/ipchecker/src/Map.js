@@ -7,16 +7,8 @@ class Map extends React.Component{
         zoom: 14
     }
     render(){
-        const mapStyle = {
-            width: "700px",
-            height: "500px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "20px",
-            border: "5px solid black"
-        }
         return(
-            <div style = {mapStyle}>
+            <div className = "mapStyle">
                 <GoogleMapReact
                     bootstrapURLKeys={{
                         key: "", 
