@@ -1,46 +1,38 @@
-import React from 'react'
+import React, {useContext, useState} from 'react'
+import {IPInfoContext} from "./context/IPInfoProvider"
 import './styles.css'
 
-class IPChecker extends React.Component{
-    state = {
-        ipAddress: "",
-        ipInfo: {},
-    }
-    handleSubmit = (e) => {
+export default function IPChecker(){
+    const value = useContext(IPInfoContext)
+
+    const [input, setInput] = useState("")
+
+    const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(`https://api.iplegit.com/full?ip=${this.state.ipAddress}`)
+        fetch(`https://api.iplegit.com/full?ip=${input}`)
         .then(response => response.json())
         .then (response => {
-            this.setState({
-                ipInfo: response
-            })
-            console.log(this.state.ipInfo)
+            value.updateIPInfo(response)
+            console.log(value.ipInfo)
         })
     }
-    handleChange = (e) => {
-        const {name, value} = e.target
-        this.setState({
-            [name]: value
-        })
+    const handleChange = (e) => {
+        const {value} = e.target
+            setInput(value)
     }
-    render(){
-        return(
-            <div>
-                <form className = "formStyle" onSubmit = {this.handleSubmit}>
-                    <input className = "inputStyle"
-                        type ='text'
-                        placeholder = 'Enter the IP Address you wish to check'
-                        name = 'ipAddress'
-                        value = {this.ipAddress}
-                        onChange = {this.handleChange}
-                    />
-                    <br/>
-                    <button className ="buttonStyle">Check IP Address</button>
-                </form>
-            </div>
-        )
-    }
+ 
+    return(
+        <div>
+            <form className = "formStyle" onSubmit = {handleSubmit}>
+                <input className = "inputStyle"
+                    type ='text'
+                    placeholder = 'Enter the IP Address you wish to check'
+                    value = {input}
+                    onChange = {handleChange}
+                />
+                <br/>
+                <button className ="buttonStyle">Check IP Address</button>
+            </form>
+        </div>
+    )
 }
-export default IPChecker
-
-//

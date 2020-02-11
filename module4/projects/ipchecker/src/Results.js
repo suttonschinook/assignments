@@ -1,21 +1,23 @@
-import React from "react"
+import React, {useContext} from "react"
+import {IPInfoContext} from "./context/IPInfoProvider"
 
 function Results(props){
+    const value = useContext(IPInfoContext)
     return(
         <div className = "resultsStyle">
-            <h2>ISP: </h2>
+            <h2>IP Address: {value.ipAddress} </h2>
             <br/>
-            <h2>IP Address: </h2>
+            <h2>ISP: {value.ipInfo.isp}</h2>
             <br/>
-            <h2>Bad: </h2>
+            <h2>Safe? - {value.ipInfo.bad ? " Is Dangerous" : " Is Safe"} </h2>
             <br/>
-            <h2>Type:</h2>
+            <h2>Type: {value.ipInfo.type}</h2>
             <br/>
-            <h2>Country:</h2>
+            <h2>Country: {value.ipInfo.countryName} </h2>
             <br/>
-            <h2>Region:</h2>
+            <h2>Region: {value.ipInfo.region} </h2>
             <br/>
-            <h2>City: </h2>
+            <h2>City: {value.ipInfo.city} </h2>
         </div>
     )
 }
