@@ -13,8 +13,8 @@ export default function Map(){
                 }}
                 center={value.center}
                 zoom={value.zoom}
-                // onChildMouseEnter={this.onChildMouseEnter}
-                // onChildMouseLeave={this.onChildMouseLeave}
+                onChildMouseEnter={this.onChildMouseEnter}
+                onChildMouseLeave={this.onChildMouseLeave}
             />
         </div>
     )
