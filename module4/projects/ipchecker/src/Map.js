@@ -8,7 +8,7 @@ export default function Map(){
         <div className = "mapStyle">
             <GoogleMapReact
                 bootstrapURLKeys={{
-                    key: "", 
+                    key: "AIzaSyDPXugV3IUyKcXLJ71ozh6VcW2rBWY8jXk", 
                     language: 'en'
                 }}
                 center={value.center}

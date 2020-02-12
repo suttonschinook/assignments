@@ -5,17 +5,12 @@ import Map from "./Map"
 import Results from "./Results"
 import Footer from "./Footer"
 
-function App(){
-    const combo ={
-        display: "flex",
-        alignItems: "center",
-        marginLeft: "10%",
-    }
+export default function App(){
     return(
         <div>
             <Header />
             <IPChecker />
-            <div style = {combo}>
+            <div className = "combo">
                 <Map />
                 <Results />
             </div>
@@ -23,4 +18,3 @@ function App(){
         </div>
     )
 }
-export default App
