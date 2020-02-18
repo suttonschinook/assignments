@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
-import ThermeProvider from "./context/ThemeProvider"
+import ThemeProvider from "./context/ThemeProvider"
 
 ReactDOM.render(
     <ThemeProvider>
