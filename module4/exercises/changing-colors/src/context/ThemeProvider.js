@@ -4,11 +4,21 @@ export const ThemeContext = React.createContext()
 export default function ThemeProvider(props){
     const colorTheme = useState({
         isLightTheme: true,
-        lightTheme: { bg:"#333", color: "whitesmoke" },
-        darkTheme: {bg:"#whitesmoke", color:"#333"}
+        darkTheme: { bg:"#333", color: "whitesmoke" },
+        lightTheme: {bg:"#whitesmoke", color:"#333"}
     })
 
     toggleTheme = () => {
-        
+        {useState}({!isLightTheme ? lightTheme : darkTheme)}
+
     }
+    return(
+        <ThemeContext.Provider
+            value = {{
+                ...colorTheme, 
+                toggleTheme}}
+        >
+                {props.children}
+        </ThemeContext.Provider>
+    )
 }
