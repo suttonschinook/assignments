@@ -9,7 +9,7 @@ export default function ThemeProvider(props){
     })
 
     toggleTheme = () => {
-        {useState}({!isLightTheme ? lightTheme : darkTheme)}
+        {useState}=({!isLightTheme ? lightTheme : darkTheme)}
 
     }
     return(
