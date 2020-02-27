@@ -13,14 +13,22 @@
     font-family: 'Merriweather';
     src: url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
 }
-.header{
+header{
     display: flex;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 50px;
-    color: #6DB39A;
     background-color: whitesmoke;
-    height: 10vh;
+    height: 15vh;
     align-items: center;
     justify-content: center;
+}
+header > p {
+    
+}
+nav{
+    display: flex;
+    height: 5vh;
+    background-color: #F6CFFF;
+}
+
+footer{
+    
 }
