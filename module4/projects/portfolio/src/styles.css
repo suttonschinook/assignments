@@ -1,34 +1,10 @@
 *{
     margin: 0;
 }
-@font-face{
-    font-family: "Oswald";
-    src: url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-}
-@font-face{
-    font-family: "Roboto";
-    src: url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-}
-@font-face{
-    font-family: 'Merriweather';
-    src: url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
-}
-header{
-    display: flex;
-    background-color: whitesmoke;
-    height: 15vh;
-    align-items: center;
-    justify-content: center;
-}
-header > p {
-    
-}
-nav{
-    display: flex;
-    height: 5vh;
-    background-color: #F6CFFF;
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-footer{
-    
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');

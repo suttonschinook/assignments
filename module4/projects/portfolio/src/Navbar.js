@@ -9,7 +9,7 @@ const NavBar = styled.div`
     align-items: center;
 `
 const StyledAnchor = styled.a`
-    font-family: 'Roboto';
+    font-family: Oswald;
 `
 export default function Navbar(){
     return(
@@ -17,9 +17,9 @@ export default function Navbar(){
             <StyledAnchor>Home</StyledAnchor>
             <StyledAnchor>About</StyledAnchor>
             <StyledAnchor>Portfolio</StyledAnchor>
-            <StyledAnchor>GitHub</StyledAnchor>
+            <StyledAnchor href="https://github.com/suttonschinook">GitHub</StyledAnchor>
             <StyledAnchor>Resume</StyledAnchor>
 
         </NavBar>
     )
-}
+} 

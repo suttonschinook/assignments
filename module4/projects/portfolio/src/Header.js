@@ -7,16 +7,17 @@ const HeaderStyled = styled.header`
     height: 15vh;
     align-items: center;
     justify-content: center;
-    font-family: 'Merriweather';
-    font-weight: 700;
-    font-size: 50px;
     color: whitesmoke;
+`
+const ParagraphStyled = styled.p`
+    font-family: Raleway;
+    font-size: 50px;
 `
 
 export default function Header(){
     return(
         <HeaderStyled>
-            <p>EVAN SUTTON</p>
+            <ParagraphStyled>EVAN SUTTON</ParagraphStyled>
         </HeaderStyled>
     )
 }
