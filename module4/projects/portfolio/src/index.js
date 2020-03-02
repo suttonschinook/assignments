@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
-import PortfolioContex from "./context/PortfolioContext"
+import PortfolioContext from "./context/PortfolioContext"
 import "./styles.css"
 
 ReactDOM.render(
-    <PortfolioContex>
+    <PortfolioContext>
         <App />
-    </PortfolioContex>,
+    </PortfolioContext>,
     document.getElementById("root"))
