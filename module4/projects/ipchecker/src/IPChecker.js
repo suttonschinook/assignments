@@ -13,7 +13,6 @@ export default function IPChecker(){
         .then(response => response.json())
         .then (response => {
             value.updateIPInfo(response)
-            console.log(value.ipInfo)
         })
     }
     const handleChange = (e) => {
