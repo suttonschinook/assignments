@@ -23,6 +23,7 @@ const Welcome = styled.p`
     font-size: 50px;
     font-weight: 700;
     color: lightgray;
+    opacity: 0.9;
 `
 export default function Main(){
     const dateInfo = useContext(PortfolioContext)
