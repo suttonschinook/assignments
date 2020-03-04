@@ -6,7 +6,6 @@ const Home = styled.main`
     display: grid;
     grid-template-columns: 7, 1fr;
     grid-template-rows: 7, 1fr;
-    background-color: #B5FFE5;
     height: 70vh;
     background-image: url('https://images.unsplash.com/flagged/photo-1565896209840-a18b89dd65d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9');
     background-repeat: no-repeat;
