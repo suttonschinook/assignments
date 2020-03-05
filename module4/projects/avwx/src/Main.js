@@ -35,7 +35,7 @@ const StyledInput = styled.input`
 `
 export default function Main(){
     const {getWX} = useContext(AVWXContext)
-    const handleClick = (e) =>{
+    const handleSubmit = (e) =>{
         e.preventDefault()
         getWX()
     }
@@ -44,8 +44,8 @@ export default function Main(){
         <StyledMain>
             <StyledBackground>
                 <Overlay />
-            <StyledForm onSubmit={handleClick}>
-                <StyledInput type="text" placeholder="ICAO"></StyledInput>
+            <StyledForm onSubmit={handleSubmit}>
+                <StyledInput type="text" placeholder="Enter a ICAO" ></StyledInput>
                 <button>Click</button>
             </StyledForm>
             </StyledBackground>

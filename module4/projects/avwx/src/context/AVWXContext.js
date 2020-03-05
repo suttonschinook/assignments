@@ -6,9 +6,8 @@ export default function AVWXProvider(props){
         results:{},
     })
 
-function getWX(){
-    console.log(HTMLDivElement)
-        fetch('https://api.checkwx.com/metar/kslc/decoded?pretty=1',{
+function getWX(airport){
+        fetch('https://api.checkwx.com/metar/',{airport},'/decoded?pretty=1',{
             headers:{
                 "x-api-key": process.env.REACT_APP_AVWX_APIKEY
             }
@@ -17,6 +16,7 @@ function getWX(){
         .then(response => {
             setAVWXState({results: response.data})
         })
+        console.log(AVWXState)
     }
     return(
         <AVWXContext.Provider
